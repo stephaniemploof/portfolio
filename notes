@@ -1,0 +1,18 @@
+The two ways to build additional pages:
+    1: create a folder, including and index.html in the folder.
+    2: create an html file, naming it whatever html you want i.e. about-me.
+
+Launching the live page:
+    1: Go to settings.
+    2: Open up pages. 
+    3: Press visit site.
+
+
+Questions as of 10/17/23:
+My questions: 
+
+1: For some reason, adding a grid on the homepage created so much additional space that I can't seem to remove. 
+
+2: I believe we discussed in the last class, but I cannot figure out how to have a form send to an email. I will review the last class recording, but if you know off the top of your head, that would be helpful. 
+
+3: I know how to access the URL to my github portal, but if you could help me link the URL for additional pages I have to my buttons, that would be helpful!

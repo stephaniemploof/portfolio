@@ -1,3 +1,222 @@
+/* The Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800&display=swap');
+
+/*Colors
+Blue/green: #052B2D 
+Background color: #EDF1E8
+Button color: #1E6669
+Button color highlight: #80A6A3
+*/
+
 body {
-    color:aqua
+    margin: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #052B2D;
+    background-color:#F8F9F6;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 32px;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+/*header*/
+.header {
+    padding: 18px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#ploof-logo {
+    width: auto;
+    height: 80px;
+}
+
+.header-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.header-buttons {
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #1E6669;
+    color: #ffff;
+    font-weight: 500;
+    border-style: none;
+    padding: 16px 24px 16px 24px;
+    border-radius: 100px;
+    margin: 16px;
+}
+
+/*Intro*/
+.landing-page-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-right: 75px;
+    margin-left: 75px;
+}
+
+.bio-copy-flex {
+    display: flex;
+    flex-direction: column;
+    margin-right: 18px;
+    margin-left: 12px;
+    margin: 10px;
+}
+
+.headshot {
+    display: flex;
+    align-items: center;
+    flex-shrink: 3;
+    height: 32%;
+    border: 2px solid #052B2D;
+    border-radius: 1000px;
+    margin-right: 12px;
+}
+
+
+.button {
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #1E6669;
+    color: #ffff;
+    font-weight: 500;
+    border-style: none;
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 100px;
+    width: 18%;
+}
+
+/*skills & tools*/
+#skills-tools {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    line-height: 30px;
+}
+
+.list-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+#featured-work {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#get-in-touch {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*featured work*/
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    padding: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    transition: transform 0.3s ease;
+}
+
+.featured-work-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.featured-work-image-1 {
+    background-image: url(Lonely_Traveler_App_Design.jpg);
+}
+
+.featured-work-image-2 {
+    background-image: url(agape_website.png);
+}
+
+.featured-work-image-3 {
+    background-image: url(VPI_website.png);
+}
+
+.featured-work-image-4 {
+    background-image: url(Shop_Tash.png);
+}
+
+/*form*/
+form {
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid hsl(0, 0%, 90%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 18px;
+}
+
+.submit-button {
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #1E6669;
+    color: #ffff;
+    font-weight: 500;
+    border-style: none;
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 100px;
+    width: 15%;
+}
+
+/*button hover*/
+button:hover {
+    background-color: #0B9484; 
+}
+
+#ploof-logo:hover {
+    content: url('SPloof logo-hover.png');
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
