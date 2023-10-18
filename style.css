@@ -9,12 +9,10 @@ Button color highlight: #80A6A3
 */
 
 body {
-    margin: 10px;
     font-family: 'Nunito Sans', sans-serif;
     color: #052B2D;
     background-color:#F8F9F6;
-    padding-left: 12px;
-    padding-right: 12px;
+    margin: 0px;
 }
 
 h1 {
@@ -34,7 +32,7 @@ h3 {
 }
 
 button {
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 /*header*/
@@ -60,10 +58,10 @@ button {
 .header-buttons {
     font-size: 16px;
     letter-spacing: 2px;
-    background-color: #1E6669;
-    color: #ffff;
+    color: #052B2D;
     font-weight: 500;
-    border-style: none;
+    border-style: solid;
+    border-color: #1E6669;
     padding: 16px 24px 16px 24px;
     border-radius: 100px;
     margin: 16px;
@@ -88,6 +86,7 @@ button {
 .headshot {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-shrink: 3;
     height: 32%;
     border: 2px solid #052B2D;
@@ -211,12 +210,28 @@ form {
 /*button hover*/
 button:hover {
     background-color: #0B9484; 
+    font-weight: 500;
+}
+
+.header-buttons:hover {
+    color:#ffff;
 }
 
 #ploof-logo:hover {
     content: url('SPloof logo-hover.png');
+    
 }
 
 .card:hover {
     transform: scale(1.03);
+}
+
+.footer {
+    display: flex;
+    background-color: #1E6669;
+    color: #ffff;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-top: 32px;
+    padding: 3px 3px 3px 50px;
 }
