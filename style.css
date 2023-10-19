@@ -17,7 +17,7 @@ body {
 
 h1 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 42px;
     letter-spacing: 3px;
 }
 
@@ -29,7 +29,7 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 2px;
 }
 
@@ -91,14 +91,14 @@ a {
 }
 
 .header-buttons {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 2px;
     color: #052B2D;
     font-weight: 500;
     border-style: solid;
     border-color: #1E6669;
     width: 12em;
-    padding: 16px 24px 16px 24px;
+    padding: 12px;
     border-radius: 100px;
     margin: 16px;
 }
@@ -224,15 +224,15 @@ a {
 }
 
 
-.resume-button {
-    font-size: 16px;
+.dark-button {
+    font-size: 14px;
     letter-spacing: 3px;
     background-color: #052B2D;
     color: #ffff;
     font-weight: 500;
     border-style: none;
     width: 12em;
-    padding: 16px 32px 16px 32px;
+    padding: 16px;
     border-radius: 100px;
     margin-top: 16px;
 }
@@ -316,7 +316,7 @@ a {
 /*featured work page*/
 #featured-work-page {
     color: #052B2D;
-    padding: 75px 75px 100px 75px;
+    padding: 75px 200px 100px 200px;
 }
 
 .featured-work-page-card {
@@ -341,19 +341,6 @@ form {
     flex-direction: column;
     gap: 2rem;
     font-size: 18px;
-}
-
-.submit-button {
-    font-size: 16px;
-    letter-spacing: 2px;
-    background-color: #0a423c;
-    color: #ffff;
-    font-weight: 500;
-    border-style: none;
-    margin-top: 16px;
-    padding: 16px;
-    border-radius: 100px;
-    width: 12em;
 }
 
 /*lonely traveler page*/
@@ -434,7 +421,7 @@ footer {
 }
 
 .footer-logo {
-    height: 55px;
+    height: 32px;
     padding: 10px;
     transition: transform 0.3s ease;
 }
