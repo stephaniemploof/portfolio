@@ -108,9 +108,9 @@ a {
     display: block;
     cursor: pointer;
     font-size: 55px;
-  }
+}
   
-  @media (min-width: 960px) {
+@media (min-width: 960px) {
     .hamburger-menu {
       display: none;
     }
@@ -139,6 +139,7 @@ a {
     font-size: 38px;
     cursor: pointer;
     z-index: 1;
+    transition: 0.4s ease-in-out;
 }
 
 .side-menu-ploof-logo {
@@ -163,6 +164,7 @@ a {
     margin-bottom: 20px;
 }
 
+/*Side menu breakpoints */
 @media screen and (max-width: 960px) {
     .header-links {
         display: none;
@@ -193,11 +195,10 @@ a {
 
 
 /* Animation classes */
-
 .show-menu {
     opacity: 1;
     transform: translateX(0%);
-  }
+}
 
 /*Intro*/
 .landing-page-grid {
@@ -222,7 +223,6 @@ a {
     border-radius: 1000px;
     margin-right: 12px;
 }
-
 
 .dark-button {
     font-size: 14px;
@@ -456,8 +456,6 @@ button:hover {
 }
 
 /*breakpoints*/
-
-
 @media (max-width:1260px) {
     .landing-page-grid {
         grid-template-columns: 1fr;
