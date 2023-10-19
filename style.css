@@ -103,6 +103,102 @@ a {
     margin: 16px;
 }
 
+/*side menu*/
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 55px;
+  }
+  
+  @media (min-width: 960px) {
+    .hamburger-menu {
+      display: none;
+    }
+}
+
+.side-menu-position {
+    padding-top: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.side-menu-design {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    background-color: #F8F9F6;
+    padding: 20px;
+    color:#052B2D;
+    font-size: 38px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.side-menu-ploof-logo {
+    width: auto;
+    height: 100px;
+}
+
+.side-menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.side-menu-links {
+    text-decoration: none;
+    line-height: 2em;
+    color: #052B2D;
+}
+
+.close-icon {
+    cursor: pointer;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .header-links {
+        display: none;
+    }
+
+    .ploof-logo {
+        display: none;
+    }
+
+    .ploof-logo-hover {
+        display: inline;
+    }
+
+    .hamburger-menu {
+        display: block;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .header-grid {
+        grid-template-columns: 1fr; /* Adjust the number of columns as needed */
+    }
+
+    .header {
+        border-bottom: none;
+    }    
+}
+
+
+/* Animation classes */
+
+.show-menu {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
 /*Intro*/
 .landing-page-grid {
     display: grid;
