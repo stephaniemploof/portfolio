@@ -1,16 +1,16 @@
-function submitForm() {
-    // Basic form validation
-    var firstName = document.getElementById("firstName").value;
-    var lastName = document.getElementById("lastName").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
+// Basic form validation
+let form = document.getElementById('contactForm');
 
-    if (firstName === "" || lastName === "" || email === "" || message === "") {
-        alert("All fields are required");
-        return;
-    }
-}
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let firstName = document.getElementById("firstName").value;
+    let lastName = document.getElementById("lastName").value;
+    let message = document.getElementById("message").value;
 
+    let mailToLink = `mailto:stephaniemploof@gmail.com?subject=Job Opportunity - ${firstName} ${lastName}&body=${message}`;
+    window.location.href = mailToLink;
+
+});
 
 // Side Menu
 let hamburger = document.getElementById('menu-trigger');
