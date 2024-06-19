@@ -313,6 +313,10 @@ a {
     background-image: url(Shop_Tash.png);
 }
 
+.featured-work-image-5 {
+    background-image: url(Agape_Website.png)
+}
+
 /*featured work page*/
 #featured-work-page {
     color: #052B2D;
